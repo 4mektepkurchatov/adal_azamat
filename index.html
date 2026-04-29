@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БІРТҰТАС ТӘРБИЕ ПЛАТФОРМАСЫ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --primary-text: #333;
+            --green: #4CAF50;
+            --orange: #FF9800;
+            --blue: #2196F3;
+            --dark-blue: #3F51B5;
+            --red: #f44336;
+            --purple: #9C27B0;
+            --teal: #008080;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-top: 8px solid;
+        }
+        .val-1 { border-color: var(--teal); }
+        .val-2 { border-color: var(--orange); }
+        .val-3 { border-color: var(--blue); }
+        .val-4 { border-color: var(--purple); }
+        .val-5 { border-color: var(--red); }
+        .val-6 { border-color: var(--green); }
+
+        .title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .month-section {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .month-name {
+            display: block;
+            background: #f1f1f1;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            width: fit-content;
+        }
+        .week-item {
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed #ddd;
+        }
+        .week-item:last-child { border-bottom: none; }
+        .quote {
+            font-size: 0.85rem;
+            color: #555;
+            font-style: italic;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .video-link {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            text-decoration: none;
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .video-link:hover {
+            background: #2e7d32;
+            color: white;
+        }
+        .icon { font-size: 1.5rem; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>«АДАЛ АЗАМАТ» БІРТҰТАС ТӘРБИЕ ПЛАТФОРМАСЫ</h1>
+    <p>Құндылықтарға негізделген 10 минуттық тәрбие және қауіпсіздік сағаттары</p>
+</div>
+
+<div class="grid">
+    <div class="card val-1">
+        <div class="title"><span class="icon">📦</span> Тәуелсіздік және отаншылдық</div>
+        
+        <div class="month-section">
+            <span class="month-name">Қазан</span>
+            <div class="week-item">
+                <span class="quote">«Ел-жұртымның бақыты аталатын, сөнбесін мәңгі сенің, Отан, атың!»</span>
+                <a href="https://www.youtube.com/watch?v=wWjm5D0vqNY" target="_blank" class="video-link">1-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">«Туған жердей жер болмас, туған елдей ел болмас!»</span>
+                <a href="https://www.youtube.com/watch?v=5cfn9x9Juro" target="_blank" class="video-link">2-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">«Отанды сүю - отбасынан басталады!»</span>
+                <a href="https://youtu.be/8t55HGAUvBo?si=hgxKwfWTtYaa4Qjm" target="_blank" class="video-link">3-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">«Отаным - алтын бесігім!»</span>
+                <a href="https://www.youtube.com/watch?v=Dae8gdyA1OY" target="_blank" class="video-link">4-апта видео</a>
+            </div>
+        </div>
+
+        <div class="month-section">
+            <span class="month-name">Наурыз</span>
+            <div class="week-item">
+                <span class="quote">«Патриотизм - ата-анаңды құрметтей білуің...» — Б. Момышұлы</span>
+                <a href="https://www.youtube.com/watch?v=rO0uamX2bDY" target="_blank" class="video-link">1-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">«Тәуелсіздік - тәтті сөз ғана емес, ұлттық жауапкершілік»</span>
+                <a href="https://www.youtube.com/watch?v=tcrJtix8IIE" target="_blank" class="video-link">2-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">«Ар-намыс қана тәуелсіздікке тірек бола алады»</span>
+                <a href="https://www.youtube.com/watch?v=O6iGfEAkRzE" target="_blank" class="video-link">3-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">«Патриотизмі жоқ халық жаны жоқ тәнмен тең»</span>
+                <a href="https://www.youtube.com/watch?v=xzSRTvbbjCc" target="_blank" class="video-link">4-апта видео</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card val-2">
+        <div class="title"><span class="icon">⚖️</span> Әділдік және жауапкершілік</div>
+        <div class="month-section">
+            <span class="month-name">Қараша</span>
+            <div class="week-item">
+                <span class="quote">«Әділдік пен жауапкершілік - біртұтас ұғым!»</span>
+                <a href="https://www.youtube.com/watch?v=Y-vx4vZEGhg" target="_blank" class="video-link">1-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">«Тура биде туған жоқ!»</span>
+                <a href="https://www.youtube.com/watch?v=Zd94BFstNF8" target="_blank" class="video-link">2-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">«Жауапкершілік - адамгершілік қасиеттің көрінісі»</span>
+                <a href="https://www.youtube.com/watch?v=z9XqnzuGemc" target="_blank" class="video-link">3-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">«Әділетте берік болсаң аяғың таймайды!»</span>
+                <a href="https://www.youtube.com/watch?v=Z95g_wY9Ml0" target="_blank" class="video-link">4-апта видео</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card val-3">
+        <div class="title"><span class="icon">📜</span> Заң және тәртіп</div>
+        <div class="month-section">
+            <span class="month-name">Қаңтар</span>
+            <div class="week-item">
+                <span class="quote">Талап бар жерде тәртіп бар.</span>
+                <a href="https://www.youtube.com/watch?v=Xv_355aRDDE" target="_blank" class="video-link">1-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Тәртіп - тәрбие бастауы.</span>
+                <a href="https://www.youtube.com/shorts/JaeGi-iFLCc" target="_blank" class="video-link">2-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Әділ заң - аспан тірегі.</span>
+                <a href="https://www.youtube.com/watch?v=E9U25pV7gnc" target="_blank" class="video-link">3-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Тәртіпсіз ел болмайды.</span>
+                <a href="https://www.youtube.com/watch?v=RkJrc6PpGKo" target="_blank" class="video-link">4-апта видео</a>
+            </div>
+        </div>
+
+        <div class="month-section">
+            <span class="month-name">Шілде</span>
+            <div class="week-item">
+                <span class="quote">Заңға бағыну - заман талабы.</span>
+                <a href="https://www.youtube.com/watch?v=HJQ9PUrzhCQ" target="_blank" class="video-link">1-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Әдептілік - әдемілік.</span>
+                <a href="https://www.youtube.com/watch?v=SpXf6Svz-c4" target="_blank" class="video-link">2-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Құқықтық сауаттылық - басты бағдар.</span>
+                <a href="https://youtu.be/gT0mhJZ1508?si=6ng8luxoCStkr98U" target="_blank" class="video-link">3-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Тәрбие - тәртіптің тетігі.</span>
+                <a href="https://youtu.be/gT0mhJZ1508?si=6ng8luxoCStkr98U" target="_blank" class="video-link">4-апта видео</a>
+            </div>
+        </div>
+
+        <div class="month-section">
+            <span class="month-name">Тамыз</span>
+            <div class="week-item">
+                <span class="quote">Адалдық пен заң - егіз.</span>
+                <a href="https://youtu.be/emOe7jCJPa4?si=ouXuoBWsg3pdMWUp" target="_blank" class="video-link">1-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Заңды құрметтеу - парызымыз.</span>
+                <a href="https://youtu.be/Q52hNkO0OdE?si=-VovBZe-BNuI8Nbg" target="_blank" class="video-link">2-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Тәртіптің ең үлкені - өзіңді меңгеру.</span>
+                <a href="https://www.youtube.com/watch?v=HJQ9PUrzhCQ" target="_blank" class="video-link">3-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Әділдік - заңның жаны.</span>
+                <a href="https://youtu.be/wIcN2M3dPyM?si=vXVyWkNhfyu_ohyJ" target="_blank" class="video-link">4-апта видео</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card val-4">
+        <div class="title"><span class="icon">💡</span> Жасампаздық және жаңашылдық</div>
+        <div class="month-section">
+            <span class="month-name">Ақпан</span>
+            <div class="week-item">
+                <span class="quote">Жасампаздық - бәрімізге өнеге.</span>
+                <a href="https://youtu.be/wIcN2M3dPyM?si=vXVyWkNhfyu_ohyJ" target="_blank" class="video-link">1-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Шығармашыл бала - ойлы бала.</span>
+                <a href="https://youtu.be/fJE2xBJNPHY?si=3aBEEp0fVzl4mqOK" target="_blank" class="video-link">2-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Өнерлі бала өрге жүзер.</span>
+                <a href="https://youtu.be/q5AvzEWqaWM?si=e1QKVRReN_yvFkaC" target="_blank" class="video-link">3-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Жаңашылдық - заман талабы.</span>
+                <a href="https://www.youtube.com/watch?v=k0CFXTCv9j4" target="_blank" class="video-link">4-апта видео</a>
+            </div>
+        </div>
+
+        <div class="month-section">
+            <span class="month-name">Маусым</span>
+            <div class="week-item">
+                <span class="quote">Ең берік қамал - Отанға деген сүйіспеншілік.</span>
+                <a href="https://youtu.be/OyIrWqq0UwA?si=ewDl3gGShKUIYOKl" target="_blank" class="video-link">1-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Бірлік пен жасампаздық - ел бағдары.</span>
+                <a href="https://www.youtube.com/watch?v=VcAeJc2rsec" target="_blank" class="video-link">2-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Жасампаз халық болуымыз қажет.</span>
+                <a href="https://www.youtube.com/shorts/Gk_oqFbTxSE" target="_blank" class="video-link">3-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">Адал ұл ер боп туса - ел тірегі!</span>
+                <a href="https://www.youtube.com/watch?v=HJQ9PUrzhCQ" target="_blank" class="video-link">4-апта видео</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card val-5">
+        <div class="title"><span class="icon">🚜</span> Еңбекқорлық және кәсіби біліктілік</div>
+        <div class="month-section">
+            <span class="month-name">Қыркүйек</span>
+            <div class="week-item">
+                <span class="quote">“Білім-қымбат қазына, қанағат тұтпа азына”</span>
+                <a href="https://youtu.be/lEjpM6TPqts?si=1uOQlsvk5Fu2BnjH" target="_blank" class="video-link">1-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">“Жанұям-қорғаным, ата-анам-тірегім!”</span>
+                <a href="https://youtu.be/WVm9vfuTvWU?si=rg6tzM1XFhNIoaIa" target="_blank" class="video-link">2-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">“ Ақырын жүріп анық бас, еңбегің кетпес далаға!”</span>
+                <a href="https://youtu.be/z9XqnzuGemc?si=Ks8q1PqdU3hGbE7t" target="_blank" class="video-link">3-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">“ Еңбек-жай ғана қызмет емес, адам болмысының айнасы.”</span>
+                <a href="https://youtu.be/ez1QNpvFK7w?si=MibK2-PO-ZF6nL6C" target="_blank" class="video-link">4-апта видео</a>
+            </div>
+        </div>
+
+        <div class="month-section">
+            <span class="month-name">Сәуір</span>
+            <div class="week-item">
+                <span class="quote">“ Еңбек-қуаныш, жалқаулық-айырылмас азап.”</span>
+                <a href="https://youtu.be/40p-wsQ91xM?si=dZoOz5l88Sud-Al0" target="_blank" class="video-link">1-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">“ Көп еңбек еткенге бақыт басын иеді.”</span>
+                <a href="https://youtu.be/McZqbRPfHTM?si=enSLaHg8WJn_C3rH" target="_blank" class="video-link">2-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">“Болашағы зор мамандықтар жоқ, тек болашағы зор мамандар бар”</span>
+                <a href="https://www.youtube.com/watch?v=2DOapUiTWzc" target="_blank" class="video-link">3-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">“Білікті білім жинап кәсіп етер, білімнің дәмін татып өсіп өнер.”</span>
+                <a href="https://www.youtube.com/watch?v=yfIBk_rhryo" target="_blank" class="video-link">4-апта видео</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card val-6">
+        <div class="title"><span class="icon">🤝</span> Бірлік және ынтымақ</div>
+        <div class="month-section">
+            <span class="month-name">Желтоқсан</span>
+            <div class="week-item">
+                <span class="quote">“Бірлігі күшті ел озады”.</span>
+                <a href="https://youtu.be/SgB5dC2eoUM?si=DomPzaq5OhEQOr1R" target="_blank" class="video-link">1-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">“Ынтымақ жүрген жерде ырыс бірге жүреді.”</span>
+                <a href="https://youtu.be/PG-iobKn4ig?si=WHfB7um6S_wdHfx4" target="_blank" class="video-link">2-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">“Бірлік болмай тірлік болмас”</span>
+                <a href="https://youtu.be/JkUvKopOdlI?si=ZYmQyh4a4OHEGPkx" target="_blank" class="video-link">3-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">“Ынтымақ-бұзылмайтын қорған”.</span>
+                <a href="https://www.youtube.com/watch?v=XC6XcJMHCBg" target="_blank" class="video-link">4-апта видео</a>
+            </div>
+        </div>
+
+        <div class="month-section">
+            <span class="month-name">Мамыр</span>
+            <div class="week-item">
+                <span class="quote">“Күннің көзі ортақ, жақсының сөзі ортақ”.</span>
+                <a href="https://youtu.be/oCPp_7Rbrao?si=T-KbYJ7GHQfnJ7QW" target="_blank" class="video-link">1-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">“Бірлік жоқ болса ұйым жоқ, ұйым жоқ болса күнің жоқ.”</span>
+                <a href="https://youtube.com/shorts/Eo-LByhDKJo?si=9ealEF_0RN5jTIk5" target="_blank" class="video-link">2-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">“Жалғанда ойлап тұрсаң бірлік керек, бірлікті ойлау үшін тірлік керек.”</span>
+                <a href="https://www.youtube.com/watch?v=2oiMFTGbnEs" target="_blank" class="video-link">3-апта видео</a>
+            </div>
+            <div class="week-item">
+                <span class="quote">“Тату елге тыныштық пен тоқшылық кәсіп.”</span>
+                <a href="https://youtu.be/hJometBbJ44?si=00NNucAXWZaJK_Gc" target="_blank" class="video-link">4-апта видео</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
